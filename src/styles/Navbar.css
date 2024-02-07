@@ -1,0 +1,60 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100px;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 60px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  color: #000000;
+}
+
+.logo-icon {
+  height: 75px;
+}
+
+.logo-icon.rotate {
+  animation: rotation 0.5s ease;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(120deg);
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.link {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
+  transition: color 0.15s ease;
+}
+
+.link:hover {
+  color: #fca311;
+}
